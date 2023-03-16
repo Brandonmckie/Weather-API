@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+
+    /* border: 1px solid red; */
+}
+
+body {
+    height: 100vh;
+}
+
+.outer {
+    display: flex;
+}
+
+.sidebar {
+    width: 20%;
+    padding-right: 20px;
+    padding-left: 9px;
+}
+
+.maincontainer {
+    flex-grow: 1;
+}
+
+.header {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+#searchBtn {
+    width: 100%;
+    background-color: rgb(77, 148, 247);
+    border: none;
+    border-radius: 5px;
+    height: 32px;
+    color: aliceblue;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+.mainforcast {
+    border: 1px solid black;
+    padding: 1rem;
+    margin-top: 10px;
+}
+
+.mainforcast ul li {
+    padding: 1rem 0px 1rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#selctedCity{
+    display: flex;
+}
+
+.card{
+    background-color:#485bb0;
+    width: 15%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#cards{
+    display: flex;
+}
+
+#cards div{
+    margin: 0px 20px 0px 0px;
+}

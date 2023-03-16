@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./Assets/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Weather Dashboard</h1>
+    </div>
+
+    <div class="outer">
+        <div class="sidebar">
+            <h1>Search for a City:</h1>
+                <input type="text" placeholder="Miami" id="cityInput">
+                <button onclick="getInfo()" id="searchBtn">Search</button>
+            <div id="searchedCitys">
+                <button onclick="getInfo()" id="searchBtn">Search</button>
+            </div>
+        </div>
+        <div class="maincontainer">
+            <div class="mainforcast">
+                <div id="selctedCity">
+                    <h2 id="cityName">City</h2>
+                    <h2 id="date"></h2>
+                    <img id="weatherIcon" src="" alt="">
+                </div>
+              
+                <div>
+                    <ul>
+                        <li id="tempature">Temp:</li>
+                        <li id="windSpeed">Wind Speed:</li>
+                        <li id="humdity">Humdity:</li>
+                    </ul>
+                </div>
+            </div>
+            <div></div>
+            <div id="fiveDayForcast">
+                <h3>5-Day Forcast</h3>
+                <div id="cards" >
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./Assets/app.js"></script>
+</body>
+
+</html>
